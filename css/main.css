@@ -21,7 +21,7 @@ nav {
     display: flex;
     align-items: center;
     justify-content: center;
-    position: fixed;
+    position: sticky;
     top: 0;
     z-index: 999; /* To ensure it stay above everything */
 }
@@ -97,6 +97,7 @@ footer {
     font-size: 12px;
 }
 #upper-footer-container {
+    border-top: 2px solid black;
     width: 100%;
     display: flex;
 }
