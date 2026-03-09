@@ -18,9 +18,9 @@ nav {
     background-color: hsl(0, 0%, 90%);
     width: 100%;
     height: 64px;
-    display: flex;
+    display: grid;
+    grid-template-columns: 52px 52px auto 150px;
     align-items: center;
-    justify-content: center;
     position: sticky;
     top: 0;
     z-index: 999; /* To ensure it stay above everything */
@@ -78,6 +78,9 @@ nav #menu-icon.change #bar3 {
     transform: translate(0, -6px) rotate(45deg); 
 }
 @media (max-width: 800px) {
+    nav {
+        grid-template-columns: 52px 52px auto;
+    }
     #menu-links {
         display: none;
     }
@@ -99,16 +102,15 @@ footer {
 #upper-footer-container {
     border-top: 2px solid black;
     width: 100%;
-    display: flex;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
 }
 #upper-footer-container .quadrants {
     box-sizing: border-box;
-    width: 25%;
     padding: 20px 40px;
-    display: flex;
-    flex-direction: column;
 }
 #upper-footer-container .quadrants a {
+    display: block;
     margin: 4px 0;
     color: black;
 }
@@ -133,15 +135,15 @@ footer {
     border-top: 2px solid black;
     width: 100%;
     height: 60px;
-    display: flex;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: auto auto ;
     align-items: center;
 }
 #lower-footer-container p {
     margin-left: 8px;
-    margin-right: auto;
 }
 #lower-footer-container a {
+    float: right;
     margin: 0 12px;
     color: black;
 }
