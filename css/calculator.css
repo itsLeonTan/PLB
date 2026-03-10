@@ -1,0 +1,47 @@
+#intro-container {
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8% 12%;
+    text-align: center;
+    border-bottom: 2px solid black;
+}
+
+
+
+
+
+#explainer-container {
+    border-top: 2px solid black;
+    width: 100%;
+    box-sizing: border-box;
+    padding: 8% 12%;
+}
+#top-explainer h1 {
+    margin: 0;
+    margin-bottom: 24px;
+}
+#top-explainer p {
+    margin-bottom: 24px;
+}
+.lower-explainer {
+    border: 2px solid black;
+    box-sizing: border-box;
+    width: 48%;
+    float: left;
+    margin: 0 1%;
+    padding: 28px 36px;
+    margin-top: 12px;
+}
+.lower-explainer h4 {
+    margin: 0;
+}
+.lower-explainer ul {
+    margin: 0;
+    padding-left: 0;
+    list-style-position: inside;
+}
+.lower-explainer li {
+    margin-top: 8px;
+}
+
+
