@@ -1,8 +1,26 @@
+:root {
+    --primary0: hsl(111, 41.1%, 20%);
+    --primary1: hsl(111, 41.1%, 25%);
+    --primary2: hsl(111, 41.1%, 30%);
+    --primary3: hsl(111, 41.1%, 35%);
+    --primary4: hsl(111, 41.1%, 40%);
+
+    --white0: hsl(0, 0%, 100%);
+    --white1: hsl(0, 0%, 95%);
+    --white2: hsl(0, 0%, 90%);
+    --white3: hsl(0, 0%, 85%);
+    --white4: hsl(0, 0%, 80%);
+
+    --black0: hsl(0, 0%, 0%);
+    --black1: hsl(0, 0%, 5%);
+    --black2: hsl(0, 0%, 10%);
+    --black3: hsl(0, 0%, 15%);
+    --black4: hsl(0, 0%, 20%);
+}
 html {
     scroll-behavior: smooth;
     font-family: "Montserrat", sans-serif;
 }
-
 body {
     background-color: hsl(0, 0%, 90%);
     width: 100%;
