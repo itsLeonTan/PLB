@@ -28,6 +28,8 @@ main {
     display: grid;
     grid-template-columns: 1fr 4fr;
     box-sizing: border-box;
+    position: sticky;
+    top: 88px;
 }
 #info-container h2 {
     grid-column: 1 / 3;
