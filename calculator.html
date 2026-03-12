@@ -7,8 +7,9 @@
         <link rel="icon" type="image/x-icon" href="/assets/growth.png">
         <link rel="stylesheet" href="/css/main.css">
         <link rel="stylesheet" href="/css/calculator.css"> 
-        <script src="js/main.js"></script>
-        <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/chart.js" defer></script>
+        <script src="js/calculator.js" defer></script>
+        <script src="js/main.js" defer></script>
     </head>
 
     <body>
@@ -47,26 +48,26 @@
                 <h2>Input Parameters</h2>
 
                 <p>Initial Investment ($)</p>
-                <input type="number" step="1000" value="10000" min="0">
+                <input id="initial" type="number" step="1000" value="10000" min="0">
 
                 <p>Monthly Contribution ($)</p>
-                <input type="number" step="100" value="500">
+                <input id="contribution" type="number" step="100" value="500">
 
                 <p>Annual Interest Rate (%)</p>
-                <input type="number" step="1" value="7">
+                <input id="interest" type="number" step="1" value="7">
 
                 <p>Time Period (Years)</p>
-                <input type="number" step="1" value="10">
+                <input id="years" type="number" step="1" value="10">
 
                 <div id="summary">
                     <h3>Final Value Summary</h3>
                     <p class="L">Total Invested:</p>
-                    <p class="R">$70,000</p>
+                    <p class="R" id="totalInvested">$70,000</p>
                     <p class="L">Total Interest:</p>
-                    <p class="R">$36,639.02</p>
+                    <p class="R" id="totalInterest">$36,639.02</p>
                     <hr>
                     <p class="L">Final Balance:</p>
-                    <p class="R">$106,639.02</p>
+                    <p class="R" id="finalBalance">$106,639.02</p>
                 </div>
             </div>
 
@@ -79,48 +80,12 @@
 
             <div id="table">
                 <h2>Year-by-Year Breakdown</h2>
-                <table>
+                <table id="table-breakdown">
                     <tr>
                         <th>Year</th>
                         <th>Principal</th>
                         <th>Interest Earned</th>
                         <th>Total Balance</th>
-                    </tr>
-                    <tr>
-                        <td>0</td>
-                        <td>$10,000</td>
-                        <td>$0</td>
-                        <td>$10,000</td>
-                    </tr>
-                    <tr>
-                        <td>1</td>
-                        <td>$16,000</td>
-                        <td>$919.19</td>
-                        <td>$16,919.19</td>
-                    </tr>
-                    <tr>
-                        <td>2</td>
-                        <td>$22,000</td>
-                        <td>$2,338.58</td>
-                        <td>$24,338.58</td>
-                    </tr>
-                    <tr>
-                        <td>3</td>
-                        <td>$28,000</td>
-                        <td>$4,294.31</td>
-                        <td>$32,294.31</td>
-                    </tr>
-                    <tr>
-                        <td>4</td>
-                        <td>$34,000</td>
-                        <td>$6,825.16</td>
-                        <td>$40,825.16</td>
-                    </tr>
-                    <tr>
-                        <td>5</td>
-                        <td>$40,000</td>
-                        <td>$9,972.70</td>
-                        <td>$49,972.70</td>
                     </tr>
                 </table>
             </div>
@@ -212,8 +177,6 @@
                 </div>
             </div>
         </footer>
-
-        <script src="js/calculator.js"></script>
     </body>
 </html>
 
