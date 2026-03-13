@@ -16,40 +16,65 @@
 	width:100px;
 }
 
-.boxes{
-	font-size:14px;
-	border:2px solid blue;
-	text-align: center; 
-	width:250px;
-	height:150px;
-	display:list-item; 
-}
-
-.boxes {
-	width:25%;
-	margin:2%;
-	display: block;
-	float: left;	
-}
-
-
-#meet {
-	clear:left;
-	float: left; 
-}
-
 #box{
 	width: 100%;
 	clear: left;
 	float: left;
-	border: 2px solid blue; 
+	border: 2px solid black; 
 	height: 25%;
 	clear: left; 
 	text-align: center; 
 }
 
-#meet * span{
+#meet  span{
 	border: 2px solid black;
 }
 
+.stats li{                                      /*the blue part before the footer */
+	background-color: rgb(35, 27, 105);
+	color:white;
+	width: 25%;
+	clear :left ;
+	display : grid;
+	float: left;
+	float: right;
+}
 
+
+.container .sect {                                         /* first class section under the main tag*/
+	border-bottom: 2px solid black;
+	padding: 10%;
+	text-align: center; 
+}
+
+ .sect > .about{                                        /* aboutPLB section with about 5 rows  */
+	display: grid;
+	clear: both;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: auto auto auto ;
+	border-bottom: 2px solid blue; 
+}
+
+ .about  p{									/* this is where i seperate the lines on the AboutPLB part and the following sentence */
+	display: grid;
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+  .boxes{								/* the 3 boxes where i want to make side by side with mission, innovation etc */
+	display: grid;
+	clear: both; 
+	border:2px solid black;
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	column-gap: 100px;
+}
+
+.about .Our_story{
+	display: grid;
+	grid-row-start: 4;
+	grid-column-start: 1;
+	
+}
