@@ -1,0 +1,86 @@
+#box1{
+	margin:10px;
+	padding:10px;
+	border:1px solid black;
+	background-color:rgb(18, 40, 64);
+	color:white;
+	width:100px;
+
+}
+
+#box2{
+	margin:10px;
+	padding:10px;
+	border:1px solid black;
+	
+	width:100px;
+}
+
+#box{
+	width: 100%;
+	clear: left;
+	float: left;
+	border: 2px solid black; 
+	height: 25%;
+	clear: left; 
+	text-align: center; 
+}
+
+#meet  span{
+	border: 2px solid black;
+}
+
+.stats li{                                      /*the blue part before the footer */
+	background-color: rgb(35, 27, 105);
+	color:white;
+	width: 25%;
+	clear :left ;
+	display : grid;
+	float: left;
+	float: right;
+}
+
+
+
+.container{                                     /* main container for the entire main part of the home or for the different sections*/
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: auto;
+	
+	
+}
+.container .sect {                                         /* first class section under the main tag*/
+	border-bottom: 2px solid black;
+	padding: 10%;
+	text-align: center; 
+}
+
+ .sect .about{                                        /* aboutPLB section with about 5 rows  */
+	display: grid;
+	grid-template-rows: auto auto auto auto;
+	grid-template-columns: auto auto auto ;
+	border-bottom: 2px solid black; 
+}
+
+ .about  p{									/* this is where i seperate the lines on the AboutPLB part and the following sentence */
+	display: grid;
+	grid-row-start: 2;
+	grid-column-start: 1;
+	grid-column-end: 3;
+}
+
+  .boxes{								/* the 3 boxes where i want to make side by side with mission, innovation etc */
+	display: grid;
+	border:2px solid black;
+	grid-row-start: 3;
+	grid-column-start: 1;
+	grid-column-end: 3;
+	column-gap: 100px;
+}
+
+.about .Our_story{
+	display: grid;
+	grid-row-start: 4;
+	grid-column-start: 1;
+	
+}
